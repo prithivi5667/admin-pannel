@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Left tab with the right window */
+.w-row {
+  min-height: 100vh;
+  display: flex;
+  max-width: 100%;
+}
+
+/* left tab setup */
+.l-tab {
+  width: 12%;
+  padding: 1rem;
+  background-color: #4e73df;
+  background-image: linear-gradient(#4e73df, #224abe);
+  color: white;
+  line-height: 2;
+}
+
+.tabIcon {
+  font-size: 2rem;
+  margin: 0 1rem;
+  transform: rotate(-20deg);
+}
+
+.l-tab h5 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.l-tab a {
+  color: rgb(211, 211, 211);
+}
+
+.l-tab a:hover,
+.l-tab a:focus {
+  color: white;
+}
+
+.dropdownTab div > a,
+.dropdownTab div > a:hover {
+  color: black;
+}
+
+/* right window setup */
+.r-tab {
+  min-height: 100vh;
+  width: 88%;
+  background-color: #f8f9fc;
+}
+
+/* Responsive toggle button */
+.ham {
+  display: none;
+  color: #4e73df;
+}
+
+/* navbar */
+.navTop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+}
+
+/* searchbar */
+.searchBar {
+  flex: 50%;
+  display: flex;
+  padding: 0 0.5rem;
+  max-width: 25rem;
+}
+
+.search {
+  flex: 50%;
+  outline-color: #4e72dfa9;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  padding: 0 0.5rem;
+}
+
+.searchIcon {
+  padding: 0.8rem;
+  height: 100%;
+  background-color: #4e73df;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* alert icons section */
+.alert {
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: auto;
+}
+
+.alertBdg {
+  color: rgb(199, 198, 198);
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.alertBdg p {
+  text-align: center;
+  margin: 0 1rem 0 0;
+}
+
+.alertIcon {
+  display: none;
+}
+
+.s-icon {
+  height: auto;
+  width: 1.3em;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Page Heading */
+.pageHeader {
+  color: #585858;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1.5rem 1rem;
+}
+
+/* Gist component on the top in Grid */
+.gistFlex {
+  margin: 1rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: stretch;
+}
+
+.gist {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+}
+
+.gist p {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.gist h4 {
+  padding: 0;
+  margin: 0;
+  color: #585858;
+  width: fit-content;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+/* icon in the dashboard gist */
+.dashIcon {
+  color: rgb(221, 221, 221);
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: auto;
+}
+
+.borderCard {
+  border: 1px solid #e3e6f0;
+}
+
+/* Contents Card Component */
+.contentsCard {
+  margin: 1.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+  border: 1px solid #e3e6f0;
+}
+
+.contentsCard h6 {
+  padding: 1rem;
+  color: #4e73df;
+  background-color: #f8f9fc;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.contentsCard p {
+  color: #858796;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+.Post {
+  padding: 2rem 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Post img {
+  width: 50%;
+}
+
+.contentsCard a {
+  color: #4e73df;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.contentsCard a:hover {
+  color: none;
+  text-decoration: underline;
+}
+
+.link {
+  margin: 1rem;
+}
+
+/* Contents Alignment */
+.Contents {
+  display: flex;
+}
+
+.l-content,
+.r-content {
+  flex: 50%;
+}
+
+/* Projects Progress Bar */
+.projectProgress {
+  margin: 1rem;
+}
+
+.projectProgress p {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.info p {
+  flex: 50%;
+}
+
+.percent {
+  text-align: right;
+}
+
+/* Shades component */
+.shades {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+}
+
+.shades h6 {
+  color: white;
+  font-weight: 400;
+}
+
+.shades p {
+  color: #ffffff80;
+  font-size: 0.8rem;
+}
+
+/* Foter */
+.footer {
+  background-color: white;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  bottom: 0;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #858796;
+  text-align: center;
+  padding-top: 1rem;
+  padding-right: 12%;
+}
+
+@media screen and (max-width: 995px) {
+  .u-name {
+    display: none;
+  }
+
+  .l-tab {
+    width: 20%;
+    font-size: 70%;
+  }
+
+  .footer p {
+    padding-right: 20%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .w-row {
+    flex-direction: column;
+  }
+
+  .l-tab {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  .r-tab {
+    width: 100%;
+  }
+
+  .navTop {
+    height: 4rem;
+    width: 100%;
+    padding: 0.8rem;
+    justify-content: center;
+  }
+
+  .ham {
+    width: fit-content;
+    display: block;
+  }
+
+  .searchBar {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    width: 100%;
+    margin-top: 10rem;
+    height: 3rem;
+    position: absolute;
+    display: none;
+    box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+  }
+
+  .searchIcon {
+    padding: 0.3rem 1.2rem;
+  }
+
+  .alertIcon {
+    display: block;
+  }
+
+  .gistFlex {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .footer p {
+    padding-right: 0;
+  }
+
+  .Contents {
+    flex-direction: column;
+  }
+}
+
+/* Testing dropdown */
+/* .testNav {
+  appearance: none;
+  width: 100%;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.parentTest::after {
+  content: "\25b6";
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: all;
+  width: 40px;
+}
+
+.parentTest:focus::after {
+  transform: rotate(90deg);
+}
+
+.parentTest {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdownTab::before {
+  content: "red";
+  position: absolute;
+  top: 0.5rem;
+  margin-right: 0.5rem;
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.dropdownTab {
+  position: relative;
+} */
